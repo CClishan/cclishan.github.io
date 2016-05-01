@@ -1,0 +1,724 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Zimbra," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="#Overview
+Zimbra Collaboration Server Network Edition with Zimbra Mobile enabled integrates natively over-the-air with the Mail, Contact and Calendar applications on any Apple iPhone, iPod Touch or iP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Zimbra Mobile Installation and Setup for iPhone/iPad">
+<meta property="og:url" content="/2016/05/01/Zimbra-Mobile-Installation-and-Setup-for-iPhone-iPad/index.html">
+<meta property="og:site_name" content="少年维持着烦恼">
+<meta property="og:description" content="#Overview
+Zimbra Collaboration Server Network Edition with Zimbra Mobile enabled integrates natively over-the-air with the Mail, Contact and Calendar applications on any Apple iPhone, iPod Touch or iP">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/71d7f89bjw1f3g36cc4i6j206y0cc0ud.jpg">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/71d7f89bjw1f3g36cc4i6j206y0cc0ud.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/71d7f89bjw1f3g38hr1u2j206y0ca3yz.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/71d7f89bjw1f3g39hjta2j206y0cbaaq.jpg">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/71d7f89bjw1f3g3bd5ez0j206y0ccaat.jpg">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/71d7f89bjw1f3g3c8aveaj206y0cc3yv.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/71d7f89bjw1f3g3d01vlpj206y0afjru.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/71d7f89bjw1f3g3f01hnsj206y0ccwf1.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/71d7f89bjw1f3g3ftqbknj206y0ccaab.jpg">
+<meta property="og:image" content="http://ww2.sinaimg.cn/large/71d7f89bjw1f3g3hl4fp1j206y0ccgmb.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/71d7f89bjw1f3g3i5jhl8j206y0ccjrp.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/71d7f89bjw1f3g3isyl46j206y0cc74y.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/large/71d7f89bjw1f3g3jmam2sj206y0ccjrp.jpg">
+<meta property="og:updated_time" content="2016-05-01T11:17:56.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Zimbra Mobile Installation and Setup for iPhone/iPad">
+<meta name="twitter:description" content="#Overview
+Zimbra Collaboration Server Network Edition with Zimbra Mobile enabled integrates natively over-the-air with the Mail, Contact and Calendar applications on any Apple iPhone, iPod Touch or iP">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> Zimbra Mobile Installation and Setup for iPhone/iPad | 少年维持着烦恼 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">少年维持着烦恼</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">宁缄默而不言，毋驶舌以取戾。</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'TuB3wsJ5eaAUpgM8eR6g','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Zimbra Mobile Installation and Setup for iPhone/iPad
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-05-01T18:51:06+08:00" content="2016-05-01">
+              2016-05-01
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>#Overview</p>
+<p>Zimbra Collaboration Server Network Edition with Zimbra Mobile enabled integrates natively over-the-air with the Mail, Contact and Calendar applications on any Apple iPhone, iPod Touch or iPad. By using the ActiveSync protocol no additional download is required, only that Wi-Fi or a wireless data plan is enabled. After a simple configuration step users can work virtually anywhere with their Zimbra account on the go.<br><a id="more"></a></p>
+<p>You can use the Apple iPhone to access your Zimbra account three primary ways:</p>
+<ul>
+<li>Entering Zimbra Mobile settings for email, contact and calendar sync</li>
+<li>View Zimbra in the Safari mobile web browser</li>
+<li>Entering IMAP/POP3 email settings</li>
+</ul>
+<p>For more information about ActiveSync, go to<br><a href="http://en.wikipedia.org/wiki/ActiveSync" target="_blank" rel="external">http://en.wikipedia.org/wiki/ActiveSync</a></p>
+<p><strong>Important</strong>: <em>Performing the following steps can delete all of the existing contacts on your iPhone. This is a common problem for iPhone users when creating a new ActiveSync account. You should ensure that you have backed up all of your contacts before proceeding.</em></p>
+<p>#Installation and Setup for iPhone</p>
+<ol>
+<li>On your iPhone Home screen, tap the Settings icon (the Gears icon).<br><img src="http://ww4.sinaimg.cn/large/71d7f89bjw1f3g36cc4i6j206y0cc0ud.jpg" alt=""></li>
+</ol>
+<p>Scroll down and select <strong>Mail, Contacts, Calendars</strong>.</p>
+<p><img src="http://ww4.sinaimg.cn/large/71d7f89bjw1f3g36cc4i6j206y0cc0ud.jpg" alt=""></p>
+<ol>
+<li>Select <strong>Add Account</strong>.</li>
+</ol>
+<p><img src="http://ww3.sinaimg.cn/large/71d7f89bjw1f3g38hr1u2j206y0ca3yz.jpg" alt=""></p>
+<ol>
+<li>Choose <strong>Microsoft Exchange</strong>.</li>
+</ol>
+<p><img src="http://ww1.sinaimg.cn/large/71d7f89bjw1f3g39hjta2j206y0cbaaq.jpg" alt=""></p>
+<ol>
+<li>Enter your account information.</li>
+</ol>
+<blockquote>
+<ul>
+<li><strong>Email</strong>. This is your company email address (for example, user@company.net)</li>
+<li><strong>Password</strong>. This is your Zimbra password (the same one used for the Zimbra Web Client)</li>
+<li><strong>Description</strong>. This is a descritpion for yourself, you can write the name that you prefer.<br><em>Note: Domain. If iOS ask for a domain, we need to leave the field blank Click <em>*Next</em></em>.</li>
+</ul>
+</blockquote>
+<p><img src="http://ww4.sinaimg.cn/large/71d7f89bjw1f3g3bd5ez0j206y0ccaat.jpg" alt=""></p>
+<ol>
+<li>Select to synchronize Mail, Contacts, and/or Calendars by setting the sliders to <strong>On</strong>.</li>
+</ol>
+<p><img src="http://ww2.sinaimg.cn/large/71d7f89bjw1f3g3c8aveaj206y0cc3yv.jpg" alt=""></p>
+<p>If you already have Contacts, a screen displays asking if you want to keep your current contacts on your iPhone. If you select to <strong>Keep on My iPhone</strong>, you may see duplicate entries of your contacts.</p>
+<p><img src="http://ww3.sinaimg.cn/large/71d7f89bjw1f3g3d01vlpj206y0afjru.jpg" alt=""></p>
+<ol>
+<li>Click <strong>Save</strong>. Your Zimbra Mobile account is now set up and synchronizes. You can now edit your global or account-specific settings as described in the next section, <strong>Changing Your Account Settings</strong>.</li>
+</ol>
+<p>#Changing Your Account Settings</p>
+<p>Once you have successfully set up your account, you should begin to see mail folders, contacts, and your calendar(s) appear on your device. When the synchronization completes, you can edit your global or account-specific settings.</p>
+<p>In <strong>Settings &gt; Mail, Contacts, Calendars</strong> you can set global or account-specific usability controls for your email account(s), including setting the number of messages to show, how many lines of an email to preview, font size, how often to sync, and more.</p>
+<p><strong>Note</strong>: <em>When you make a global setting, all your email accounts are affected. When you make an account-specific setting, only the selected email account is affected</em>.</p>
+<p><img src="http://ww1.sinaimg.cn/large/71d7f89bjw1f3g3f01hnsj206y0ccwf1.jpg" alt=""></p>
+<p>#Calendar Sync Filter</p>
+<p>Select your Zimbra Account and then select Account Info to adjust whether you want any of the syncing options changed, how many days of email and which folders you want synced.</p>
+<p><strong>Important</strong>: <em>If you have a large Calendar, you may have some issues if syncing more than 200 appointments.</em></p>
+<p><img src="http://ww1.sinaimg.cn/large/71d7f89bjw1f3g3ftqbknj206y0ccaab.jpg" alt=""></p>
+<p>#Email Sync Filter</p>
+<p>Select your Zimbra Account and then select Account Info to adjust whether you want any of the syncing options changed, how many days of email and which folders you want synced.</p>
+<p><strong>Important</strong>: <em>If you select No Limit and you have a large amount of email, you may have some issues syncing.</em></p>
+<p>#Accessing ZCS using Zimbra Mobile Web Client</p>
+<p>All devices with an HTML-compatible browser can access Zimbra email, contacts, calendar, and briefcase using the Zimbra Mobile Web Client.<br>To use the Zimbra Mobile Web Client, open the HTML-compatible browser (the Safari icon on your iPhone) on your phone and type in the URL of your Zimbra Server with a /m/ at the end of the URL. For example:</p>
+<blockquote>
+<p><a href="https://domain.servername.com/zimbra/m/" target="_blank" rel="external">https://domain.servername.com/zimbra/m/</a></p>
+</blockquote>
+<p><img src="http://ww2.sinaimg.cn/large/71d7f89bjw1f3g3hl4fp1j206y0ccgmb.jpg" alt=""></p>
+<p>If you have Zimbra Collaboration 8.x or above, you can use the new Touch Client, you only need to have a License 1.2 for your server, and in you mobile type the URL of your Zimbra Server.</p>
+<blockquote>
+<p><a href="https://domain.servername.com/" target="_blank" rel="external">https://domain.servername.com/</a></p>
+</blockquote>
+<p><img src="http://ww3.sinaimg.cn/large/71d7f89bjw1f3g3i5jhl8j206y0ccjrp.jpg" alt=""></p>
+<p>You can see Emails, Contacts and Calendar for now, and is a HTML5 interface, so you can see it in your iPad too:</p>
+<p><img src="http://ww3.sinaimg.cn/large/71d7f89bjw1f3g3isyl46j206y0cc74y.jpg" alt=""><br><img src="http://ww3.sinaimg.cn/large/71d7f89bjw1f3g3jmam2sj206y0ccjrp.jpg" alt=""></p>
+<p>#Getting Zimbra Email Using IMAP/POP3</p>
+<p>You can read your email on the iPhone just like you would with a desktop email client by setting it up for IMAP or POP3 access. This option is available to both free Open Source users and paying Network Edition users.</p>
+<p><strong>Note</strong>: <em>This method only syncs email messages. To access your Zimbra contacts and calendars, use either Zimbra Mobile Web client in the Safari browser or upgrade to Zimbra Network Edition.</em></p>
+<p><strong>SET UP</strong>:</p>
+<ul>
+<li>Under Mail settings, select “Add Account…”</li>
+<li>Select “Other”</li>
+<li>Select “IMAP”, “POP3”, or “Exchange”</li>
+<li>Fill in the “Name”, “Address”, and “Description” fields</li>
+<li>Provide “Host Name”, “User Name”, and “Password” in the “Incoming Mail Server” section. The iPhone will automatically detect IMAP over SSL if your server requires it. If your server requires a non-default TCP port specification, use the hostname:port format in the “Host Name” field. SSL settings can be adjusted later under the “Advanced” section in the mail account settings.</li>
+<li>In the “Outgoing Mail Server (SMTP)” section, provide settings for “Host Name”, “User Name” and “Password”. As with the incoming mail server, the “Host Name” setting accepts the hostname:port format if the outgoing mail server uses a non-default TCP port.</li>
+<li>Save the configuration</li>
+</ul>
+<p><strong>Sub-Folders</strong>: Setting the IMAP Path Prefix to “INBOX” allows for the browsing of folders child folders of “Inbox”, but peer folders such as Sent, Drafts, Trash, and Junk folders are not displayed.</p>
+<p>#General Notes for Administrators</p>
+<p>#Accessing Zimbra with “Tethered” Sync Options</p>
+<p>It is possible to sync iPhone contacts and calendar using Connector for iSync (Apple) or Connector for Outlook (Windows) or on Linux via iTunes. These options are unsupported by Zimbra and we recommend using Zimbra Mobile instead.</p>
+<p>#SSL Certificates, the iPhone, and Zimbra Mobile</p>
+<p>The iPhone prefers non-selfsigned SSL connections. If you have a self signed certificate, then it would be a good idea to install the iPhone Configuration Utility to deploy a self signed certificate on the iPhone:<br><a href="http://www.apple.com/support/iphone/enterprise/" target="_blank" rel="external"></a></p>
+<p>The SSL certificate for an Exchange Active Sync server must have as its primary name the name by which the iPhone clients will address the server. This becomes important in situations where the Zimbra server is being run in a split-horizon DNS environment, because the name by which you address the EAS server must resolve to the same (public) IP address, no matter where you are; this may mean that users who have no name for their Zimbra server which behaves this way will need to add one, and such users will need to make sure that name is primary when they rebuild their cert.</p>
+<p>#Creating New Mail Notification via SMS</p>
+<p>You may wish for the Zimbra server to send you a text message when you receive a new e-mail.</p>
+<ul>
+<li>Click Options</li>
+<li>Choose Mail</li>
+<li>Check “Enable address for new mail notifications”</li>
+<li>Type your SMS address in e-mail format form. eg: number@txt.att.net</li>
+<li>Click Save</li>
+</ul>
+<p>Now the server will text message you when you receive a new message. Text messaging rates may apply.</p>
+<p>Resources<br>Zimbra Connector Apple iSync Guide<br>Apple KB: iPhone: Mail Settings<br>Zimbra Forums<br>Bug Tracking &amp; Enhancement Request<br>Customer Support Portal</p>
+
+      
+    </div>
+    
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Zimbra/" rel="tag">#Zimbra</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/25/以前写的东西/" rel="next" title="以前写的东西">
+                <i class="fa fa-chevron-left"></i> 以前写的东西
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.png"
+               alt="LiShan" />
+          <p class="site-author-name" itemprop="name">LiShan</p>
+          <p class="site-description motion-element" itemprop="description">Mr.sandman Please.请帮我把梦快递</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">12</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/338190006" target="_blank" title="Weibo">
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element">
+            <div class="links-of-blogroll-title">Links</div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.michaelwilliamlester.com/" title="MWL" target="_blank">MWL</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">LiShan</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>
