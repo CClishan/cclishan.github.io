@@ -80,12 +80,12 @@
 
 
 
-<meta name="description" content="skecth 3.7 新 symbols机制">
+<meta name="description" content="Skecth 3.7 新symbols机制">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Fun with symbols in Sketch 3.7">
 <meta property="og:url" content="/2016/05/02/Fun-with-symbols-in-Sketch-3-7/index.html">
 <meta property="og:site_name" content="少年维持着烦恼">
-<meta property="og:description" content="skecth 3.7 新 symbols机制">
+<meta property="og:description" content="Skecth 3.7 新symbols机制">
 <meta property="og:image" content="http://ww2.sinaimg.cn/large/71d7f89bjw1f3gvdlpknmj20xc0csab3.jpg">
 <meta property="og:image" content="http://ww2.sinaimg.cn/large/71d7f89bjw1f3gvft797rj20iy0cbwfp.jpg">
 <meta property="og:image" content="http://ww3.sinaimg.cn/large/71d7f89bjw1f3gviv828wg208w09912l.gif">
@@ -99,10 +99,10 @@
 <meta property="og:image" content="http://ww3.sinaimg.cn/large/71d7f89bjw1f3gvq784axj20vk0kktb9.jpg">
 <meta property="og:image" content="http://ww3.sinaimg.cn/large/71d7f89bjw1f3gvqvpilyg20hs0b8u0x.gif">
 <meta property="og:image" content="http://ww3.sinaimg.cn/large/71d7f89bjw1f3gvs4gjjeg20hs0b8x6p.gif">
-<meta property="og:updated_time" content="2016-05-02T03:34:12.000Z">
+<meta property="og:updated_time" content="2016-05-02T03:39:24.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Fun with symbols in Sketch 3.7">
-<meta name="twitter:description" content="skecth 3.7 新 symbols机制">
+<meta name="twitter:description" content="Skecth 3.7 新symbols机制">
 
 
 
@@ -320,7 +320,7 @@
       
 
       
-        <p>skecth 3.7 新 symbols机制</p>
+        <p>Skecth 3.7 新symbols机制</p>
 <p><img src="http://ww2.sinaimg.cn/large/71d7f89bjw1f3gvdlpknmj20xc0csab3.jpg" alt=""></p>
 <a id="more"></a>
 <p>Today, the guys at Bohemian coding released Sketch 3.7. The biggest change they made (for better or for worse) was to symbols.</p>
@@ -349,37 +349,27 @@
 <li>Duplication is probably the worst to maintain. You’ve got to keep track of all the different states and update them accordingly. Blegh.</li>
 </ol>
 <p>None of them work well if you’re handing over Zeplin files. They don’t make sense then.</p>
-<p><img src="http://ww3.sinaimg.cn/large/71d7f89bjw1f3gviv828wg208w09912l.gif" alt=""></p>
-<p><strong>Spacer option</strong></p>
-<p><img src="http://ww4.sinaimg.cn/large/71d7f89bjw1f3gvjnemceg208w099gxk.gif" alt=""></p>
-<p><strong>Background solid</strong></p>
+<p><img src="http://ww3.sinaimg.cn/large/71d7f89bjw1f3gviv828wg208w09912l.gif" alt=""><br><strong>Spacer option</strong></p>
+<p><img src="http://ww4.sinaimg.cn/large/71d7f89bjw1f3gvjnemceg208w099gxk.gif" alt=""><br><strong>Background solid</strong></p>
 <p>They all feel ‘hacky’. It’s the reason I ended up ditching symbols altogether. They were more work than they were worth.</p>
 <p>####The new way</p>
 <p>Enter nested symbols. These can be as simple or as complex as you’d like. Let’s start simple.<br>The first thing I did was to create a base symbol. This is what I want all other variations to work off of. It has everything except the shadow. I populated it with data and images from Craft (Try using the Craft repeat tool on a symbol with Craft data. Sorcery!)</p>
-<p><img src="http://ww2.sinaimg.cn/large/71d7f89bjw1f3gvkx37t2j20tu0j4gn7.jpg" alt=""></p>
-<p><strong>The base symbol</strong></p>
-<p><img src="http://ww3.sinaimg.cn/large/71d7f89bjw1f3gvljy7gmj20uo0k4wgo.jpg" alt=""></p>
-<p><strong>Populated with some data (No shadow yet)</strong></p>
+<p><img src="http://ww2.sinaimg.cn/large/71d7f89bjw1f3gvkx37t2j20tu0j4gn7.jpg" alt=""><br><strong>The base symbol</strong></p>
+<p><img src="http://ww3.sinaimg.cn/large/71d7f89bjw1f3gvljy7gmj20uo0k4wgo.jpg" alt=""><br><strong>Populated with some data (No shadow yet)</strong></p>
 <p>I then create another symbol and drag an instance of the base symbol into it. I named this row::last.</p>
-<p><img src="http://ww2.sinaimg.cn/large/71d7f89bjw1f3gvme89b5g20hs0b84qp.gif" alt=""></p>
-<p><strong>Creating the ::last symbol</strong></p>
+<p><img src="http://ww2.sinaimg.cn/large/71d7f89bjw1f3gvme89b5g20hs0b84qp.gif" alt=""><br><strong>Creating the ::last symbol</strong></p>
 <p>I then put my solid with it’s shadow behind the instance</p>
-<p><img src="http://ww1.sinaimg.cn/large/71d7f89bjw1f3gvndifscg20hs0b84qp.gif" alt=""></p>
-<p><strong>Adding the shadow</strong></p>
+<p><img src="http://ww1.sinaimg.cn/large/71d7f89bjw1f3gvndifscg20hs0b84qp.gif" alt=""><br><strong>Adding the shadow</strong></p>
 <p>Now I can go back to my mockup and start using my row::last symbol</p>
-<p><img src="http://ww4.sinaimg.cn/large/71d7f89bjw1f3gvo9mqt9g20hs0b87wh.gif" alt=""></p>
-<p><strong>Changing the symbol type</strong></p>
+<p><img src="http://ww4.sinaimg.cn/large/71d7f89bjw1f3gvo9mqt9g20hs0b87wh.gif" alt=""><br><strong>Changing the symbol type</strong></p>
 <p>Here’s where the fun starts. Say I want to change the font style on all my rows. Pre 3.7, I’d have to work through both symbols to make that happen. Now it’s just one step. All I have to do is edit the base symbol. The rest takes care of itself.</p>
-<p><img src="http://ww1.sinaimg.cn/large/71d7f89bjw1f3gvpfez8dg20hs0b8e81.gif" alt=""></p>
-<p><strong>Notice the ::last symbol doesn’t need updating</strong></p>
+<p><img src="http://ww1.sinaimg.cn/large/71d7f89bjw1f3gvpfez8dg20hs0b8e81.gif" alt=""><br><strong>Notice the ::last symbol doesn’t need updating</strong></p>
 <p>If that wasn’t enough. If you select the row::last symbol, you can still edit the text and fill properties as you would if you were editing the base symbol directly.</p>
 <p><img src="http://ww3.sinaimg.cn/large/71d7f89bjw1f3gvq784axj20vk0kktb9.jpg" alt=""></p>
 <p>This opens the door for LOTS of possibilities. In this example I created an ‘expired’ and ‘active’ symbol using the same method I did for the row::last symbol.</p>
-<p><img src="http://ww3.sinaimg.cn/large/71d7f89bjw1f3gvqvpilyg20hs0b8u0x.gif" alt=""></p>
-<p><strong>Creating some variations off the base symbol. You can change the opacity of nested symbols too!</strong></p>
+<p><img src="http://ww3.sinaimg.cn/large/71d7f89bjw1f3gvqvpilyg20hs0b8u0x.gif" alt=""><br><strong>Creating some variations off the base symbol. You can change the opacity of nested symbols too!</strong></p>
 <p>Again, illustrating that your changes are propagated throughout the nested symbols.</p>
-<p><img src="http://ww3.sinaimg.cn/large/71d7f89bjw1f3gvs4gjjeg20hs0b8x6p.gif" alt=""></p>
-<p><strong>Update 4 symbols at once</strong></p>
+<p><img src="http://ww3.sinaimg.cn/large/71d7f89bjw1f3gvs4gjjeg20hs0b8x6p.gif" alt=""><br><strong>Update 4 symbols at once</strong></p>
 <p>####Final thoughts</p>
 <p>Context editing was great. Nested symbols are better. Maybe they’ll get together in Sketch 4 and have babies.</p>
 
